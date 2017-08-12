@@ -1,0 +1,17 @@
+.membership-terms-date-container{
+    border: 1px solid #4d4d4d;
+    padding: 10px 2px;
+    background: #4d4d4d;
+    color: white;
+    border-radius: 4px;
+}
+.membership-terms-date-container .crm-form-date-wrapper{
+    color: black;
+}
+
+.membership-terms-date-container .crm-hover-button.crm-clear-link{
+    color: white;
+}
+.membership-terms-date-container .crm-hover-button.crm-clear-link:hover{
+    color: black;
+}

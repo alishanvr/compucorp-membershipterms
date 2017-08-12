@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<table>
+    <base>CRM/Membershipterms</base>
+    <class>MembershipTerms</class>
+    <name>civicrm_membershipterms</name>
+    <comment>Custom table to save record of Membership Terms/Periods</comment>
+    <add>4.4</add>
+    <log>true</log>
+
+    <field>
+        <name>id</name>
+        <type>int unsigned</type>
+        <required>true</required>
+        <comment>Unique Membership Term ID</comment>
+        <add>4.4</add>
+    </field>
+    <primaryKey>
+        <name>id</name>
+        <autoincrement>true</autoincrement>
+    </primaryKey>
+
+    <field>
+        <name>contact_id</name>
+        <type>int unsigned</type>
+        <comment>FK to Contact</comment>
+        <add>4.4</add>
+    </field>
+    <foreignKey>
+        <name>contact_id</name>
+        <table>civicrm_contact</table>
+        <key>id</key>
+        <add>4.4</add>
+        <onDelete>CASCADE</onDelete>
+        <onUpdate>CASCADE</onUpdate>
+    </foreignKey>
+
+    <field>
+        <name>start_date</name>
+        <type>DATETIME</type>
+        <comment>Membership Starting Date</comment>
+        <add>4.4</add>
+    </field>
+
+    <field>
+        <name>end_date</name>
+        <type>DATETIME</type>
+        <comment>Membership Ending Date</comment>
+        <add>4.4</add>
+    </field>
+
+    <field>
+        <name>updated_at</name>
+        <type>DATETIME</type>
+        <comment>When record is updated</comment>
+        <add>4.4</add>
+    </field>
+
+    <field>
+        <name>created_at</name>
+        <type>DATETIME</type>
+        <comment>When record is created</comment>
+        <add>4.4</add>
+    </field>
+
+    <field>
+        <name>deleted_at</name>
+        <type>DATETIME</type>
+        <comment>When record is Deleted</comment>
+        <add>4.4</add>
+    </field>
+</table>
